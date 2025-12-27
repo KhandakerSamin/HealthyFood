@@ -95,24 +95,7 @@ const Catering = () => {
       {/* Features */}
       <section className="section-padding bg-gradient-warm">
         <div className="elegant-container">
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
-            {features.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="glass-card p-8 text-center group hover:-translate-y-1 transition-transform duration-300"
-              >
-                <div className="w-16 h-16 rounded-full bg-ocean-deep/10 flex items-center justify-center mx-auto mb-6 group-hover:bg-ocean-deep group-hover:scale-110 transition-all duration-300">
-                  <item.icon className="w-7 h-7 text-ocean-deep group-hover:text-primary-foreground transition-colors duration-300" />
-                </div>
-                <h3 className="font-display text-xl text-ocean-deep mb-3 italic">{item.title}</h3>
-                <p className="font-body text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
-              </motion.div>
-            ))}
-          </div>
+          
 
           {/* Catering Packages */}
           <div className="max-w-5xl mx-auto">

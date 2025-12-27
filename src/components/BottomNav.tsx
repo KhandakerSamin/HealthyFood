@@ -4,9 +4,9 @@ import { Home, Flame, Images, CalendarCheck } from 'lucide-react';
 
 const navItems = [
   { path: '/', label: 'Home', icon: Home },
-  { path: '/popular', label: 'Popular', icon: Flame },
+  { path: '/menu', label: 'Menu', icon: Flame },
+  { path: '/catering', label: 'Catering', icon: CalendarCheck },
   { path: '/gallery', label: 'Gallery', icon: Images },
-  { path: '/reservation', label: 'Reserve', icon: CalendarCheck },
 ];
 
 const BottomNav = () => {

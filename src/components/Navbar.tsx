@@ -23,6 +23,7 @@ const Navbar = () => {
     { path: '/menu', label: 'Menu' },
     { path: '/catering', label: 'Catering' },
     { path: '/about', label: 'About' },
+    { path: '/gallery', label: 'Gallery' },
   ];
 
   // Homepage: transparent -> solid on scroll

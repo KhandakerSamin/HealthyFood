@@ -4,6 +4,12 @@ import SectionHeader from '@/components/SectionHeader';
 import { ShoppingBag } from 'lucide-react';
 import galleryDining from '@/assets/gallery-dining.jpg';
 
+interface MenuItem {
+  name: string;
+  price: number;
+  description?: string;
+}
+
 const menuData = {
   breakfast: {
     title: 'Breakfast',
@@ -146,7 +152,7 @@ const Menu = () => {
     { key: 'coffee_and_beverage', label: 'Coffee & Beverage' }
   ];
 
-  const renderMenuSection = (sectionTitle: string, items: any[]) => (
+  const renderMenuSection = (sectionTitle: string, items: MenuItem[]) => (
     <div className="mb-12">
       <h3 className="font-display text-2xl text-ocean-deep mb-6 italic capitalize">{sectionTitle}</h3>
       <div className="grid md:grid-cols-2 gap-6">
@@ -238,7 +244,7 @@ const Menu = () => {
               {/* Render each category */}
               {Object.entries(currentMenu).map(([key, value]) => {
                 if (key === 'title') return null;
-                return renderMenuSection(key.replace(/_/g, ' '), value as unknown[]);
+                return renderMenuSection(key.replace(/_/g, ' '), value as MenuItem[]);
               })}
             </motion.div>
           </div>
