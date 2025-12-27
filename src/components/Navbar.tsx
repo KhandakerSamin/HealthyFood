@@ -31,13 +31,20 @@ const Navbar = () => {
     setLanguage(language === 'en' ? 'bn' : 'en');
   };
 
+  // Homepage: transparent -> solid on scroll
+  // Other pages: always solid
+  const getNavbarStyle = () => {
+    if (!isHomePage) {
+      return 'bg-ocean-deep/95 backdrop-blur-lg py-3 shadow-warm-lg';
+    }
+    return isScrolled
+      ? 'bg-ocean-deep/95 backdrop-blur-lg py-3 shadow-warm-lg'
+      : 'bg-gradient-to-b from-ocean-deep/50 to-transparent py-5';
+  };
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled || !isHomePage
-          ? 'bg-ocean-deep/95 backdrop-blur-lg py-3 shadow-warm-lg'
-          : 'bg-gradient-to-b from-ocean-deep/50 to-transparent py-5'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${getNavbarStyle()}`}
     >
       <nav className="elegant-container">
         <div className="flex items-center justify-between">
