@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
   const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +34,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled
+        isScrolled || !isHomePage
           ? 'bg-ocean-deep/95 backdrop-blur-lg py-3 shadow-warm-lg'
           : 'bg-gradient-to-b from-ocean-deep/50 to-transparent py-5'
       }`}
