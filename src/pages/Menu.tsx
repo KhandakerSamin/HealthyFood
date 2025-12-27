@@ -3,11 +3,6 @@ import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import { ShoppingBag } from 'lucide-react';
 import galleryDining from '@/assets/gallery-dining.jpg';
-import dishHilsa from '@/assets/dish-hilsa.jpg';
-import dishBiryani from '@/assets/dish-biryani.jpg';
-import dishDuck from '@/assets/dish-duck.jpg';
-import dishKhichuri from '@/assets/dish-khichuri.jpg';
-import dishSamosa from '@/assets/dish-samosa.jpg';
 
 const menuData = {
   breakfast: {
@@ -151,11 +146,6 @@ const Menu = () => {
     { key: 'coffee_and_beverage', label: 'Coffee & Beverage' }
   ];
 
-  const getItemImage = (index: number) => {
-    const images = [dishBiryani, dishHilsa, dishDuck, dishKhichuri, dishSamosa];
-    return images[index % images.length];
-  };
-
   const renderMenuSection = (sectionTitle: string, items: any[]) => (
     <div className="mb-12">
       <h3 className="font-display text-2xl text-ocean-deep mb-6 italic capitalize">{sectionTitle}</h3>
@@ -167,23 +157,16 @@ const Menu = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: index * 0.02 }}
-            className="card-elegant overflow-hidden group hover:shadow-lg transition-all duration-300"
+            className="card-elegant p-4 group hover:shadow-lg transition-all duration-300"
           >
-            <div className="flex gap-4">
-              <div className="w-32 h-32 flex-shrink-0 overflow-hidden rounded-lg">
-                <img 
-                  src={getItemImage(index)} 
-                  alt={item.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                />
-              </div>
-              <div className="flex-1 py-2 pr-4 flex flex-col justify-center">
-                <h4 className="font-display text-lg text-ocean-deep group-hover:text-ocean-medium transition-colors duration-300 mb-1">{item.name}</h4>
+            <div className="flex items-center justify-between gap-4">
+              <div className="flex-1">
+                <h4 className="font-display text-lg text-ocean-deep group-hover:text-ocean-medium transition-colors duration-300">{item.name}</h4>
                 {item.description && (
-                  <p className="text-xs text-muted-foreground mb-2">{item.description}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
                 )}
-                <span className="font-display text-xl text-gold font-medium">৳{item.price}</span>
               </div>
+              <span className="font-display text-xl text-gold font-medium whitespace-nowrap">৳{item.price}</span>
             </div>
           </motion.div>
         ))}
@@ -248,14 +231,14 @@ const Menu = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <h2 className="font-display text-3xl md:text-4xl text-ocean-deep mb-8 text-center italic">
+              <h2 className="font-display text-3xl md:text-5xl text-ocean-deep mb-8 text-center italic">
                 {currentMenu.title}
               </h2>
 
               {/* Render each category */}
               {Object.entries(currentMenu).map(([key, value]) => {
                 if (key === 'title') return null;
-                return renderMenuSection(key.replace(/_/g, ' '), value as any[]);
+                return renderMenuSection(key.replace(/_/g, ' '), value as unknown[]);
               })}
             </motion.div>
           </div>
