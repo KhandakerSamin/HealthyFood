@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import logo from '@/assets/HF_Logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
     { path: '/menu', label: t('nav.menu') },
     { path: '/about', label: t('nav.about') },
     { path: '/gallery', label: t('nav.gallery') },
-    { path: '/reservation', label: t('nav.reservation') },
+    // { path: '/reservation', label: t('nav.reservation') },
   ];
 
   const toggleLanguage = () => {
@@ -44,20 +45,13 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${getNavbarStyle()}`}
+      className={`fixed top-0 left-0 right-0  z-50 transition-all duration-500 ${getNavbarStyle()}`}
     >
       <nav className="elegant-container">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="group flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-gradient-gold flex items-center justify-center">
-              <span className="font-display text-xl font-semibold text-ocean-deep">H</span>
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="font-display text-xl md:text-2xl font-medium tracking-wide text-primary-foreground leading-none">
-                Healthy <span className="text-gold">Food</span>
-              </h1>
-            </div>
+            <img src={logo} alt="Healthy Food" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
