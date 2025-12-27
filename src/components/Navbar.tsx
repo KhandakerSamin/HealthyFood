@@ -35,11 +35,11 @@ const Navbar = () => {
   // Other pages: always solid
   const getNavbarStyle = () => {
     if (!isHomePage) {
-      return 'bg-ocean-deep/95 backdrop-blur-lg py-3 shadow-warm-lg';
+      return 'bg-ocean-deep/95 backdrop-blur-lg py-4 shadow-warm-lg';
     }
     return isScrolled
-      ? 'bg-ocean-deep/95 backdrop-blur-lg py-3 shadow-warm-lg'
-      : 'bg-gradient-to-b from-ocean-deep/50 to-transparent py-5';
+      ? 'bg-ocean-deep/95 backdrop-blur-lg py-4 shadow-warm-lg'
+      : 'bg-gradient-to-b from-ocean-deep/50 to-transparent py-4';
   };
 
   return (
