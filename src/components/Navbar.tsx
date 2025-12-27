@@ -21,8 +21,8 @@ const Navbar = () => {
   const navLinks = [
     { path: '/', label: 'Home' },
     { path: '/menu', label: 'Menu' },
-    { path: '/about', label: 'About' },
     { path: '/catering', label: 'Catering' },
+    { path: '/about', label: 'About' },
   ];
 
   // Homepage: transparent -> solid on scroll
@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="group flex items-center gap-3">
-            <img src={logo} alt="Healthy Food" className="h-20 w-20" />
+            <img src={logo} alt="Healthy Food" className="h-15 w-14" />
           </Link>
 
           {/* Desktop Navigation */}
