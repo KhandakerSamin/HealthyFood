@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Facebook, Instagram, ArrowUpRight } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import logo from '@/assets/HF_Logo.png';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -21,12 +22,12 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link to="/" className="inline-flex items-center gap-3 mb-6 group">
-              <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
-                <span className="font-display text-2xl font-semibold text-ocean-deep">H</span>
-              </div>
-              <h2 className="font-display text-2xl font-medium italic">
-                Healthy <span className="text-gold">Food</span>
-              </h2>
+              <img 
+                src={logo} 
+                alt="Healthy Food Logo" 
+                className="h-16 w-16 object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+
             </Link>
             <p className="font-body text-sm text-primary-foreground/60 leading-relaxed mb-8">
               Crafted with Honesty, Inspired by Tradition. Authentic Bangladeshi cuisine made with fresh, 
@@ -140,12 +141,12 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/10 relative">
-        <div className="elegant-container py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="elegant-container pt-6 pb-2 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-body text-xs text-primary-foreground/40 tracking-wide">
             © {new Date().getFullYear()} Healthy Food. {t('footer.rights')}
           </p>
           <div className="flex gap-8">
-            {['menu', 'about', 'reservation'].map((item) => (
+            {['menu', 'about',].map((item) => (
               <Link 
                 key={item}
                 to={`/${item === 'menu' ? 'menu' : item}`} 
@@ -155,6 +156,11 @@ const Footer = () => {
               </Link>
             ))}
           </div>
+        </div>
+        <div className="elegant-container pb-2 text-center">
+          <p className="font-body text-xs text-primary-foreground/40 tracking-wide">
+            Design And Developed By Oriturree.com
+          </p>
         </div>
       </div>
     </footer>
