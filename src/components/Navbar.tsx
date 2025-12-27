@@ -1,14 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Globe } from 'lucide-react';
-import { useLanguage } from '@/contexts/LanguageContext';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '@/assets/HF_Logo.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { language, setLanguage, t } = useLanguage();
   const location = useLocation();
   const isHomePage = location.pathname === '/';
 
@@ -21,16 +19,11 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { path: '/', label: t('nav.home') },
-    { path: '/menu', label: t('nav.menu') },
-    { path: '/about', label: t('nav.about') },
-
-    // { path: '/reservation', label: t('nav.reservation') },
+    { path: '/', label: 'Home' },
+    { path: '/menu', label: 'Menu' },
+    { path: '/about', label: 'About' },
+    { path: '/catering', label: 'Catering' },
   ];
-
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'bn' : 'en');
-  };
 
   // Homepage: transparent -> solid on scroll
   // Other pages: always solid
@@ -51,7 +44,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="group flex items-center gap-3">
-            <img src={logo} alt="Healthy Food" className="h-12 w-auto" />
+            <img src={logo} alt="Healthy Food" className="h-20 w-20" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -75,17 +68,6 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
-
-            {/* Language Toggle */}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary-foreground/20 
-                       text-primary-foreground/75 hover:text-primary-foreground hover:border-primary-foreground/40 
-                       transition-all duration-300 font-body text-sm"
-            >
-              <Globe size={14} />
-              <span>{language === 'en' ? 'বাং' : 'EN'}</span>
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -130,20 +112,6 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.4 }}
-                className="pt-4 border-t border-white/10 mt-4"
-              >
-                <button
-                  onClick={toggleLanguage}
-                  className="flex items-center gap-3 py-3.5 px-4 text-primary-foreground/80 font-body w-full hover:bg-white/5 rounded-lg transition-colors"
-                >
-                  <Globe size={18} />
-                  <span>{language === 'en' ? 'বাংলায় দেখুন' : 'View in English'}</span>
-                </button>
-              </motion.div>
             </div>
           </motion.div>
         )}

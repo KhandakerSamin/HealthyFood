@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import Reservation from "./pages/Reservation";
 import Popular from "./pages/Popular";
+import Catering from "./pages/Catering";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/about" element={<About />} />
+            <Route path="/catering" element={<Catering />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/reservation" element={<Reservation />} />
             <Route path="/popular" element={<Popular />} />
