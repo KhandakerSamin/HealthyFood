@@ -134,7 +134,7 @@ const Catering = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className={`relative card-elegant p-8 ${pkg.popular ? 'border-2 border-gold' : ''}`}
+                  className={`relative card-elegant p-8 flex flex-col ${pkg.popular ? 'border-2 border-gold' : ''}`}
                 >
                   {pkg.popular && (
                     <div className="absolute -top-4 left-1/2 -translate-x-1/2">
@@ -150,7 +150,7 @@ const Catering = () => {
                     <p className="font-body text-sm text-muted-foreground">{pkg.serves}</p>
                   </div>
 
-                  <div className="space-y-3 mb-8">
+                  <div className="space-y-3 mb-8 flex-grow">
                     {pkg.items.map((item, i) => (
                       <div key={i} className="flex items-center gap-3 text-sm">
                         <CheckCircle className="w-4 h-4 text-gold flex-shrink-0" />
@@ -161,7 +161,7 @@ const Catering = () => {
 
                   <a
                     href="tel:+8801234567890"
-                    className="block w-full py-3 text-center bg-ocean-deep text-white font-body text-sm uppercase tracking-wide rounded-lg hover:bg-ocean-medium transition-colors duration-300"
+                    className="block w-full py-3 text-center bg-ocean-deep text-white font-body text-sm uppercase tracking-wide rounded-lg hover:bg-ocean-medium transition-colors duration-300 mt-auto"
                   >
                     Order Now
                   </a>
