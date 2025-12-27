@@ -77,8 +77,18 @@ const Catering = () => {
           <div className="absolute inset-0 bg-bengali-pattern" />
           <div className="absolute inset-0 bg-texture opacity-15" />
         </div>
-        <div className="elegant-container relative z-10">
+        <div className="elegant-container relative z-10 text-center">
           <SectionHeader subtitle="For Your Special Events" title="Catering Service" light />
+          <motion.a
+            href="tel:+8801234567890"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="inline-flex items-center gap-2 mt-6 px-8 py-3 bg-gold text-ocean-deep font-body text-sm uppercase tracking-wide rounded-lg hover:bg-gold/90 transition-colors duration-300"
+          >
+            <Phone className="w-4 h-4" />
+            Book Your Order
+          </motion.a>
         </div>
       </section>
 
