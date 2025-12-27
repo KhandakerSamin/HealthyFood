@@ -37,9 +37,9 @@ const Menu = () => {
     : menuItems.filter(item => item.category === activeCategory);
 
   return (
-    <main className="pt-24">
+    <main>
       {/* Hero */}
-      <section className="relative py-24 md:py-32 overflow-hidden">
+      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
           <img src={galleryDining} alt="Menu" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-ocean-deep/85" />

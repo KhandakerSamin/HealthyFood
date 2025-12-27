@@ -84,7 +84,7 @@ const Popular = () => {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative py-28 md:py-36 bg-ocean-deep overflow-hidden">
+      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 bg-ocean-deep overflow-hidden">
         <div className="absolute inset-0 bg-bengali-pattern" />
         <div className="absolute inset-0 bg-texture opacity-15" />
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-dark/50 to-ocean-deep" />

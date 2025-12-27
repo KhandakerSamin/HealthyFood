@@ -24,7 +24,7 @@ const Navbar = () => {
     { path: '/', label: t('nav.home') },
     { path: '/menu', label: t('nav.menu') },
     { path: '/about', label: t('nav.about') },
-    { path: '/gallery', label: t('nav.gallery') },
+
     // { path: '/reservation', label: t('nav.reservation') },
   ];
 

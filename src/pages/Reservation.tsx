@@ -22,8 +22,8 @@ const Reservation = () => {
   const inputClass = "w-full px-5 py-4 bg-white border border-border rounded-lg focus:border-ocean-medium focus:ring-2 focus:ring-ocean-medium/20 outline-none transition-all duration-300 font-body text-foreground placeholder:text-muted-foreground/60";
 
   return (
-    <main className="pt-24">
-      <section className="relative py-24 md:py-32 overflow-hidden">
+    <main>
+      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
         <div className="absolute inset-0">
           <img src={galleryDining} alt="Restaurant" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-ocean-deep/85" />
