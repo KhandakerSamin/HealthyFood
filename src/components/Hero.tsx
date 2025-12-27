@@ -15,10 +15,10 @@ const Hero = () => {
           alt="Elegant restaurant interior" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/75 via-ocean-deep/50 to-ocean-deep/80" />
-        <div className="absolute inset-0 bg-bengali-pattern" />
-        <div className="absolute inset-0 bg-texture opacity-15" />
-        <div className="absolute inset-0 opacity-40 mix-blend-soft-light bg-[radial-gradient(ellipse_at_top,_hsl(var(--gold)/0.2)_0%,_transparent_60%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/60 via-ocean-deep/40 to-ocean-deep/70" />
+        <div className="absolute inset-0 bg-bengali-pattern opacity-50" />
+        <div className="absolute inset-0 bg-texture opacity-10" />
+        <div className="absolute inset-0 opacity-30 mix-blend-soft-light bg-[radial-gradient(ellipse_at_top,_hsl(var(--gold)/0.2)_0%,_transparent_60%)]" />
       </div>
 
       {/* Decorative corner elements */}
