@@ -127,13 +127,7 @@ const Footer = () => {
                   <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
               </li>
-              <li>
-                <a href="https://healthyfooddhaka.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300 group">
-                  <span className="w-[18px] text-gold text-center">🌐</span>
-                  <span>healthyfooddhaka.com</span>
-                  <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </a>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -159,7 +153,7 @@ const Footer = () => {
         </div>
         <div className="elegant-container pb-2 text-center">
           <p className="font-body text-xs text-primary-foreground/40 tracking-wide">
-            Design And Developed By Oriturree.com
+            Design And Developed By Orituree.com
           </p>
         </div>
       </div>

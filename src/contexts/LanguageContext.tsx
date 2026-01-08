@@ -68,6 +68,11 @@ export const translations: Translations = {
   'common.readMore': { en: 'Read More', bn: 'আরও পড়ুন' },
   'common.viewAll': { en: 'View All', bn: 'সব দেখুন' },
   'common.close': { en: 'Close', bn: 'বন্ধ করুন' },
+
+  // CTA
+  'cta.subtitle': { en: 'Experience Authentic Tradition', bn: 'অথেনটিক ঐতিহ্য অনুভব করুন' },
+  'cta.title': { en: 'Reserve Your Table Today', bn: 'আজই আপনার টেবিল রিজার্ভ করুন' },
+  'cta.button': { en: 'Book Now', bn: 'এখনই বুক করুন' },
 };
 
 interface LanguageContextType {
