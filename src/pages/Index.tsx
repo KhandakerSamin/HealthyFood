@@ -9,7 +9,7 @@ import dish2 from '@/assets/dish2.jpg';
 import dish3 from '@/assets/dish3.jpg';
 import galleryDining from '@/assets/dining.jpg';
 import chefCooking from '@/assets/philosophy.png';
-import aboutImage from '@/assets/about.jpg';
+import aboutImage from '@/assets/HCatering.jpg';
 
 const Index = () => {
   const { t } = useLanguage();
