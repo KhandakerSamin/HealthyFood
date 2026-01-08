@@ -4,20 +4,20 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowRight, Leaf, Music, Wind, BadgeCheck, Truck, UtensilsCrossed } from 'lucide-react';
-import dishHilsa from '@/assets/dish-hilsa.jpg';
-import dishBiryani from '@/assets/dish-biryani.jpg';
-import dishDuck from '@/assets/dish-duck.jpg';
-import galleryDining from '@/assets/gallery-dining.jpg';
-import chefCooking from '@/assets/chef-cooking.jpg';
-import aboutImage from '@/assets/about.JPG';
+import dish1 from '@/assets/dish1.jpg';
+import dish2 from '@/assets/dish2.jpg';
+import dish3 from '@/assets/dish3.jpg';
+import galleryDining from '@/assets/dining.jpg';
+import chefCooking from '@/assets/philosophy.png';
+import aboutImage from '@/assets/about.jpg';
 
 const Index = () => {
   const { t } = useLanguage();
 
   const featuredDishes = [
-    { image: dishHilsa, name: 'Shorisha Ilish', desc: 'Hilsa in mustard sauce', price: '৳650' },
-    { image: dishBiryani, name: 'Mutton Biryani', desc: 'Saffron-infused perfection', price: '৳420' },
-    { image: dishDuck, name: 'Duck Curry', desc: 'Traditional delicacy', price: '৳750' },
+    { image: dish1, name: 'Shorisha Ilish', desc: 'Hilsa in mustard sauce', price: '৳650' },
+    { image: dish2, name: 'Mutton Biryani', desc: 'Saffron-infused perfection', price: '৳420' },
+    { image: dish3, name: 'Duck Curry', desc: 'Traditional delicacy', price: '৳750' },
   ];
 
   const features = [

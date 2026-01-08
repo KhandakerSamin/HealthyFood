@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
-import heroImage from '@/assets/hero-restaurant.jpg';
+import heroImage from '@/assets/hero.png';
 
 const Hero = () => {
   const { t } = useLanguage();

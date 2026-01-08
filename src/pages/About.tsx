@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Leaf, Award, Users, Quote } from 'lucide-react';
 import chefCooking from '@/assets/about.jpg';
-import galleryDining from '@/assets/gallery-dining.jpg';
+import galleryDining from '@/assets/aboutTeam2.jpg';
 
 const About = () => {
   const { t } = useLanguage();

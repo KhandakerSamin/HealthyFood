@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '@/components/SectionHeader';
 import { ShoppingBag } from 'lucide-react';
-import galleryDining from '@/assets/gallery-dining.jpg';
+import galleryDining from '@/assets/menu1.jpg';
 
 interface MenuItem {
   name: string;
