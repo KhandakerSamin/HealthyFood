@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowRight, Leaf, Music, Wind, BadgeCheck, Truck, UtensilsCrossed } from 'lucide-react';
 import dish1 from '@/assets/dish1.jpg';
-import dish2 from '@/assets/dish2.jpg';
+import dish2 from '@/assets/dish4.jpg';
 import dish3 from '@/assets/dish3.jpg';
 import galleryDining from '@/assets/dining.jpg';
 import chefCooking from '@/assets/philosophy.png';

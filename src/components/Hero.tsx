@@ -40,7 +40,7 @@ const Hero = () => {
           className="inline-flex items-center gap-3 px-5 py-2 rounded-full bg-gold/10 border border-gold/30 mb-8"
         >
           <span className="text-gold text-sm">✦</span>
-          <span className="font-display-alt text-sm uppercase tracking-[0.25em] text-gold">
+          <span className="font-display-alt text-sm text-white uppercase tracking-[0.25em] text-gold">
             {t('hero.subtitle')}
           </span>
           <span className="text-gold text-sm">✦</span>
