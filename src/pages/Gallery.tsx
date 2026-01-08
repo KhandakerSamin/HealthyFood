@@ -5,18 +5,19 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { X, ZoomIn } from 'lucide-react';
 import galleryDining from '@/assets/gcover2.jpg';
 import heroImage from '@/assets/g1.jpg';
-import dishHilsa from '@/assets/dish-hilsa.jpg';
-import dishDuck from '@/assets/dish-duck.jpg';
-import chefCooking from '@/assets/chef-cooking.jpg';
-import dishKhichuri from '@/assets/dish-khichuri.jpg';
+import dishHilsa from '@/assets/g2.jpg';
+import dishDuck from '@/assets/g5.jpg';
+import chefCooking from '@/assets/g4.jpg';
+import dishKhichuri from '@/assets/g6.jpg';
+import Coffee from '@/assets/g7.jpg';
 
 const galleryImages = [
   { id: 1, title: 'Restaurant Ambiance', category: 'ambiance', image: heroImage },
   { id: 2, title: 'Shorisha Ilish', category: 'dishes', image: dishHilsa },
-  { id: 3, title: 'Private Dining', category: 'ambiance', image: galleryDining },
+  { id: 3, title: 'Private Dining', category: 'ambiance', image: dishKhichuri },
   { id: 4, title: 'Duck Curry', category: 'dishes', image: dishDuck },
   { id: 5, title: 'Our Chef at Work', category: 'events', image: chefCooking },
-  { id: 6, title: 'Khichuri Platter', category: 'dishes', image: dishKhichuri },
+  { id: 6, title: 'Khichuri Platter', category: 'dishes', image:  Coffee},
 ];
 
 const Gallery = () => {

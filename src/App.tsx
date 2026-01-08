@@ -11,8 +11,8 @@ import Index from "./pages/Index";
 import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
-import Reservation from "./pages/Reservation";
-import Popular from "./pages/Popular";
+// import Reservation from "./pages/Reservation";
+// import Popular from "./pages/Popular";
 import Catering from "./pages/Catering";
 import NotFound from "./pages/NotFound";
 
@@ -32,8 +32,8 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/catering" element={<Catering />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/reservation" element={<Reservation />} />
-            <Route path="/popular" element={<Popular />} />
+            {/* <Route path="/reservation" element={<Reservation />} /> */}
+            {/* <Route path="/popular" element={<Popular />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
