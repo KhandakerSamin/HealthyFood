@@ -220,7 +220,9 @@ const Index = () => {
                 </li>
               </ul>
               <a 
-                href="tel:+8801309225522" 
+                href="https://wa.me/8801309225522" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="btn-elegant-outline"
               >
                 Call to Book: 01309-225522
@@ -293,9 +295,9 @@ const Index = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <Link to="/reservation" className="btn-gold">
+            <a href="https://wa.me/8801309225522" target="_blank" rel="noopener noreferrer" className="btn-gold">
               {t('cta.button')}
-            </Link>
+            </a>
           </motion.div>
         </div>
       </section>

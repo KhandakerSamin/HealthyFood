@@ -9,6 +9,7 @@ interface Translations {
   };
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const translations: Translations = {
   // Navigation
   'nav.home': { en: 'Home', bn: 'হোম' },
@@ -99,6 +100,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useLanguage = (): LanguageContextType => {
   const context = useContext(LanguageContext);
   if (!context) {

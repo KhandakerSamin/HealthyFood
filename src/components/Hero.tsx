@@ -79,9 +79,9 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.75 }}
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          <Link to="/reservation" className="btn-gold">
+          <a href="https://wa.me/8801309225522" target="_blank" rel="noopener noreferrer" className="btn-gold">
             <span>{t('hero.cta')}</span>
-          </Link>
+          </a>
           <Link
             to="/menu"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-body font-medium uppercase tracking-[0.15em]

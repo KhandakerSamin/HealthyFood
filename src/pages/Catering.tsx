@@ -80,7 +80,9 @@ const Catering = () => {
         <div className="elegant-container relative z-10 text-center">
           <SectionHeader subtitle="For Your Special Events" title="Catering Service" light />
           <motion.a
-            href="tel:+8801234567890"
+            href="https://wa.me/8801309225522"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
@@ -143,7 +145,9 @@ const Catering = () => {
                   </div>
 
                   <a
-                    href="tel:+8801234567890"
+                    href="https://wa.me/8801309225522"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block w-full py-3 text-center bg-ocean-deep text-white font-body text-sm uppercase tracking-wide rounded-lg hover:bg-ocean-medium transition-colors duration-300 mt-auto"
                   >
                     Order Now

@@ -151,7 +151,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="elegant-container pb-2 text-center">
+        <div className="elegant-container pb-20 lg:pb-2 text-center">
           <p className="font-body text-xs text-primary-foreground/40 tracking-wide">
             Design And Developed By Orituree.com
           </p>
