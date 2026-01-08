@@ -3,7 +3,7 @@ import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
-import { ArrowRight, Leaf, Clock, Heart } from 'lucide-react';
+import { ArrowRight, Leaf, Music, Wind, BadgeCheck, Truck, UtensilsCrossed } from 'lucide-react';
 import dishHilsa from '@/assets/dish-hilsa.jpg';
 import dishBiryani from '@/assets/dish-biryani.jpg';
 import dishDuck from '@/assets/dish-duck.jpg';
@@ -19,9 +19,12 @@ const Index = () => {
   ];
 
   const features = [
-    { icon: Leaf, title: 'No Harmful Oils', desc: 'We never use harmful cooking oils' },
-    { icon: Clock, title: 'Lighter Meals', desc: 'Healthy portions, authentic taste' },
-    { icon: Heart, title: 'Made with Love', desc: 'Family recipes, honest ingredients' },
+    { icon: Music, title: 'Live Music & Karaoke', desc: 'Entertainment station for your enjoyment' },
+    { icon: Wind, title: 'Modern Smoking Zone', desc: 'Separate area with air purifiers' },
+    { icon: BadgeCheck, title: 'Transparent Pricing', desc: 'No hidden charges, VAT included' },
+    { icon: Truck, title: 'In-House Delivery', desc: 'Fresh food delivered to your door' },
+    { icon: UtensilsCrossed, title: 'Party & Catering', desc: 'Complete event services available' },
+    { icon: Leaf, title: 'Healthy & Hygienic', desc: 'Open kitchen with fresh ingredients' },
   ];
 
   return (
@@ -99,10 +102,10 @@ const Index = () => {
       </section>
 
       {/* Features */}
-      <section className="py-16 bg-ocean-deep bg-bengali-pattern relative overflow-hidden">
+      <section className="py-12 md:py-16 bg-ocean-deep bg-bengali-pattern relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-ocean-deep via-ocean-dark to-ocean-deep opacity-85" />
         <div className="elegant-container relative">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8">
             {features.map((feature, index) => (
               <motion.div
                 key={index}
@@ -110,14 +113,14 @@ const Index = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1, duration: 0.5 }}
-                className="flex items-center gap-5 p-6"
+                className="flex items-center gap-3 md:gap-5 p-4 md:p-6"
               >
-                <div className="w-16 h-16 rounded-full bg-gradient-gold flex items-center justify-center shrink-0 shadow-gold">
-                  <feature.icon className="w-7 h-7 text-ocean-deep" />
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-gold flex items-center justify-center shrink-0 shadow-gold">
+                  <feature.icon className="w-5 h-5 md:w-7 md:h-7 text-ocean-deep" />
                 </div>
                 <div>
-                  <h3 className="font-display text-xl text-primary-foreground mb-1 italic">{feature.title}</h3>
-                  <p className="font-body text-sm text-primary-foreground/60">{feature.desc}</p>
+                  <h3 className="font-display text-base md:text-xl text-primary-foreground mb-1 italic leading-tight">{feature.title}</h3>
+                  <p className="font-body text-xs md:text-sm text-primary-foreground/60 leading-relaxed">{feature.desc}</p>
                 </div>
               </motion.div>
             ))}
