@@ -8,6 +8,8 @@ import dishHilsa from '@/assets/dish-hilsa.jpg';
 import dishBiryani from '@/assets/dish-biryani.jpg';
 import dishDuck from '@/assets/dish-duck.jpg';
 import galleryDining from '@/assets/gallery-dining.jpg';
+import chefCooking from '@/assets/chef-cooking.jpg';
+import aboutImage from '@/assets/about.JPG';
 
 const Index = () => {
   const { t } = useLanguage();
@@ -80,8 +82,8 @@ const Index = () => {
             >
               <div className="image-hover aspect-[4/5]">
                 <img 
-                  src={galleryDining} 
-                  alt="Restaurant interior"
+                  src={chefCooking} 
+                  alt="Chef cooking"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -234,7 +236,7 @@ const Index = () => {
             >
               <div className="image-hover aspect-[4/3] rounded-lg overflow-hidden">
                 <img 
-                  src={galleryDining} 
+                  src={aboutImage} 
                   alt="Catering services"
                   className="w-full h-full object-cover"
                 />

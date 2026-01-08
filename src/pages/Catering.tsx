@@ -1,7 +1,7 @@
 import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
 import { Users, Clock, CheckCircle, Phone } from 'lucide-react';
-import galleryDining from '@/assets/gallery-dining.jpg';
+import galleryDining from '@/assets/catering.jpg';
 import dishBiryani from '@/assets/dish-biryani.jpg';
 
 const Catering = () => {

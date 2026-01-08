@@ -2,7 +2,7 @@ import SectionHeader from '@/components/SectionHeader';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Leaf, Award, Users, Quote } from 'lucide-react';
-import chefCooking from '@/assets/chef-cooking.jpg';
+import chefCooking from '@/assets/about.jpg';
 import galleryDining from '@/assets/gallery-dining.jpg';
 
 const About = () => {
