@@ -148,8 +148,8 @@
   }
 
   .card-elegant {
-    @apply bg-card border border-border/40 rounded-lg shadow-sm 
-           hover:shadow-lg hover:shadow-ocean-deep/5 hover:border-ocean-pale/50
+    @apply bg-card border border-border/40 rounded-lg 
+           hover:border-ocean-pale/50
            transition-all duration-500;
   }
 
@@ -188,7 +188,7 @@
   }
 
   .glass-card {
-    @apply bg-white/80 backdrop-blur-lg border border-white/20 shadow-xl shadow-ocean-deep/5 rounded-xl;
+    @apply bg-white/80 backdrop-blur-lg border border-white/20 rounded-xl;
   }
 
   .image-hover {
@@ -334,5 +334,15 @@
   @keyframes shimmer {
     from { background-position: 200% 0; }
     to { background-position: -200% 0; }
+  }
+
+  /* Hide scrollbar for mobile tabs */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }

@@ -5,57 +5,66 @@ import galleryDining from '@/assets/catering.jpg';
 import dishBiryani from '@/assets/dish-biryani.jpg';
 
 const Catering = () => {
-  const packages = [
+  const setMenus = [
     {
       id: 1,
       name: 'Set Menu 01',
-      price: '৳2500',
-      serves: '1 Person',
       items: [
-        'Fried Rice',
-        'Chicken Fry',
-        'Prawn Tempura',
-        'Mutton Rezala',
-        'Beef Mezbani',
-        'Fish Finger',
-        'Yogurt',
-        'Borhani',
-        'Drinks'
+        { name: 'Special Healthy Fried Rice', price: 250 },
+        { name: 'Desi Chicken Fry (8-10 Piece)', price: 650 },
+        { name: 'Special Healthy Soup', price: 300 },
+        { name: 'Prawn Tempura (6 Piece)', price: 700 },
+        { name: 'Mutton Rezala', price: 450 },
+        { name: 'Beef Mezbani', price: 350 },
+        { name: 'Fish Finger (6 Piece)', price: 450 },
+        { name: 'Yogurt', price: 100 },
+        { name: 'Borhani', price: 100 },
+        { name: 'Drinks', price: 'MRP', priceNote: true }
       ],
       popular: true
     },
     {
       id: 2,
       name: 'Set Menu 02',
-      price: '৳1930',
-      serves: '1 Person',
       items: [
-        'Basmati Pulao',
-        'Mezbani Beef',
-        'Mutton Rezala',
-        'Kabab',
-        'Fish',
-        'Yogurt/Borhani',
-        'Drinks'
+        { name: 'Chinigura Rice Pulao', price: 100 },
+        { name: 'Desi Chicken Roast', price: 280 },
+        { name: 'Mezbani Beef', price: 350 },
+        { name: 'Mutton Rezala', price: 450 },
+        { name: 'Rohu Fish Fry', price: 300 },
+        { name: 'Pomfret (Fry/Curry/Grill)', price: 750 },
+        { name: 'Fried Hilsa/Mustard Hilsa', price: 750 },
+        { name: 'Yogurt', price: 100 },
+        { name: 'Borhani', price: 100 },
+        { name: 'Drinks', price: 'MRP', priceNote: true }
       ],
       popular: false
     },
     {
       id: 3,
-      name: 'Set Menu 03 - Kacchi Biriyani',
-      price: 'Contact for Price',
-      serves: 'Custom',
+      name: 'Set Menu 03',
       items: [
-        'Kacchi Biriyani',
-        'Kabab',
-        'Borhani',
-        'Yogurt',
-        'Water',
-        'Fish Fry'
+        { name: 'Special Kacchi Biryani', price: 650 },
+        { name: 'Desi Chicken Roast', price: 280 },
+        { name: 'Special Naan', price: 60 },
+        { name: 'Mezbani Beef', price: 350 },
+        { name: 'Kebab', price: 25 },
+        { name: 'Borhani', price: 100 },
+        { name: 'Yogurt', price: 100 },
+        { name: 'Water', price: 'MRP', priceNote: true }
       ],
       popular: true
     }
   ];
+
+  const calculateTotal = (items: { name: string; price: number | string; priceNote?: boolean }[]) => {
+    return items.reduce((sum, item) => {
+      if (typeof item.price === 'number') {
+        return sum + item.price;
+      }
+      return sum;
+    }, 0);
+  };
 
   const features = [
     { icon: Users, title: 'Custom Portions', desc: 'Flexible serving sizes for any group' },
@@ -100,48 +109,50 @@ const Catering = () => {
           
 
           {/* Catering Packages */}
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="font-display text-3xl md:text-4xl text-ocean-deep mb-4 italic">Our Catering Packages</h2>
+              <h2 className="font-display text-3xl md:text-4xl text-ocean-deep mb-4 italic">Set Menu for Catering</h2>
               <p className="font-body text-lg text-muted-foreground">Choose from our carefully curated set menus</p>
             </motion.div>
 
-            <div className="grid md:grid-cols-3 gap-8">
-              {packages.map((pkg, index) => (
+            <div className="grid lg:grid-cols-3 gap-8">
+              {setMenus.map((menu, index) => (
                 <motion.div
-                  key={pkg.id}
+                  key={menu.id}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className={`relative card-elegant p-8 flex flex-col ${pkg.popular ? 'border-2 border-gold' : ''}`}
+                  className="relative card-elegant p-6 flex flex-col border-2 border-gold"
                 >
-                  {pkg.popular && (
-                    <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                      <span className="inline-flex items-center gap-1 px-4 py-1.5 bg-gold text-ocean-deep font-body text-xs font-medium rounded-full">
-                        ★ Popular
-                      </span>
-                    </div>
-                  )}
                   
-                  <div className="text-center mb-6">
-                    <h3 className="font-display text-2xl text-ocean-deep mb-2 italic">{pkg.name}</h3>
-                    <p className="font-display text-3xl text-gold font-medium mb-1">{pkg.price}</p>
-                    <p className="font-body text-sm text-muted-foreground">{pkg.serves}</p>
+                  <div className="text-center mb-6 pb-4 border-b border-border">
+                    <h3 className="font-display text-2xl text-ocean-deep mb-2 italic">{menu.name}</h3>
+                    <p className="font-body text-sm text-muted-foreground">Per Person</p>
                   </div>
 
-                  <div className="space-y-3 mb-8 flex-grow">
-                    {pkg.items.map((item, i) => (
-                      <div key={i} className="flex items-center gap-3 text-sm">
-                        <CheckCircle className="w-4 h-4 text-gold flex-shrink-0" />
-                        <span className="font-body text-muted-foreground">{item}</span>
+                  <div className="space-y-2 mb-6 flex-grow">
+                    {menu.items.map((item, i) => (
+                      <div key={i} className="flex items-center justify-between gap-3 py-2 border-b border-border/50 last:border-0">
+                        <span className="font-body text-sm text-ocean-deep flex-1">{i + 1}. {item.name}</span>
+                        <span className="font-display text-base text-gold font-medium whitespace-nowrap">
+                          {item.priceNote ? item.price : `৳${item.price}`}
+                        </span>
                       </div>
                     ))}
+                  </div>
+
+                  <div className="pt-4 border-t-2 border-gold/30 mb-4">
+                    <div className="flex items-center justify-between">
+                      <span className="font-display text-lg text-ocean-deep font-medium">Total:</span>
+                      <span className="font-display text-2xl text-gold font-bold">৳{calculateTotal(menu.items)}</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-1 text-right">+ MRP drinks</p>
                   </div>
 
                   <a
@@ -155,6 +166,18 @@ const Catering = () => {
                 </motion.div>
               ))}
             </div>
+
+            {/* Note */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="mt-8 text-center glass-card p-6"
+            >
+              <p className="font-body text-base text-ocean-deep">
+                <span className="font-medium">Note:</span> Customers can add or subtract items before ordering
+              </p>
+            </motion.div>
           </div>
 
           {/* Contact Section */}
