@@ -26,6 +26,8 @@ const Footer = () => {
                 src={logo} 
                 alt="Healthy Food Logo" 
                 className="h-16 w-16 object-contain transition-transform duration-300 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
               />
 
             </Link>

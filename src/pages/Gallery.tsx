@@ -35,6 +35,9 @@ const Gallery = () => {
             src={galleryDining} 
             alt="Gallery ambiance" 
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-ocean-deep/85" />
           <div className="absolute inset-0 bg-bengali-pattern" />
@@ -63,6 +66,8 @@ const Gallery = () => {
                   src={img.image} 
                   alt={img.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ocean-deep/80 via-ocean-deep/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-end p-6">
                   <ZoomIn className="w-8 h-8 text-white mb-3" />
@@ -102,6 +107,8 @@ const Gallery = () => {
                 src={selectedItem.image} 
                 alt={selectedItem.title}
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+                loading="eager"
+                decoding="async"
               />
               <motion.p 
                 initial={{ opacity: 0 }}

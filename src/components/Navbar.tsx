@@ -45,7 +45,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="group flex items-center gap-3">
-            <img src={logo} alt="Healthy Food" className="h-15 w-14" />
+            <img src={logo} alt="Healthy Food" className="h-15 w-14" loading="eager" fetchPriority="high" decoding="async" />
           </Link>
 
           {/* Desktop Navigation */}

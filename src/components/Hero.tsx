@@ -14,6 +14,9 @@ const Hero = () => {
           src={heroImage} 
           alt="Elegant restaurant interior" 
           className="w-full h-full object-cover"
+          fetchPriority="high"
+          loading="eager"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-ocean-deep/60 via-ocean-deep/40 to-ocean-deep/70" />
         <div className="absolute inset-0 bg-bengali-pattern opacity-50" />

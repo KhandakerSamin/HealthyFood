@@ -445,9 +445,9 @@ const Menu = () => {
   return (
     <main>
       {/* Hero */}
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
+      <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={galleryDining} alt="Menu" className="w-full h-full object-cover" />
+          <img src={galleryDining} alt="Menu" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" />
           <div className="absolute inset-0 bg-ocean-deep/85" />
           <div className="absolute inset-0 bg-bengali-pattern" />
           <div className="absolute inset-0 bg-texture opacity-15" />
@@ -470,7 +470,7 @@ const Menu = () => {
       </section>
 
       {/* Menu Content */}
-      <section className="section-padding bg-gradient-warm">
+      <section className="pt-8 md:pt-12 pb-20 md:pb-28 lg:pb-36 bg-gradient-warm">
         <div className="elegant-container">
           {/* Tabs - Sticky on scroll */}
           <div className="mb-12 sticky top-24 md:top-28 z-30 bg-cream/95 backdrop-blur-md py-4 md:py-5 -mx-4 px-4 md:-mx-6 md:px-6">

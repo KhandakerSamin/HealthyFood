@@ -23,6 +23,9 @@ const About = () => {
             src={galleryDining} 
             alt="Restaurant ambiance" 
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-ocean-deep/85" />
           <div className="absolute inset-0 bg-bengali-pattern" />
@@ -51,6 +54,8 @@ const About = () => {
                   src={chefCooking} 
                   alt="Our chef preparing dishes"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               {/* Decorative frame */}

@@ -85,6 +85,8 @@ const Index = () => {
                   src={chefCooking} 
                   alt="Chef cooking"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               {/* Floating card */}
@@ -151,6 +153,8 @@ const Index = () => {
                     src={dish.image} 
                     alt={dish.name}
                     className="w-full h-full object-cover"
+                    loading="lazy"
+                    decoding="async"
                   />
                 </div>
                 <div className="flex justify-between items-start">
@@ -241,6 +245,8 @@ const Index = () => {
                   src={aboutImage} 
                   alt="Catering services"
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
             </motion.div>
@@ -255,6 +261,8 @@ const Index = () => {
             src={galleryDining} 
             alt="Restaurant ambiance"
             className="w-full h-full object-cover"
+            loading="lazy"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-ocean-deep/85" />
           <div className="absolute inset-0 bg-bengali-pattern" />

@@ -81,6 +81,9 @@ const Catering = () => {
             src={galleryDining} 
             alt="Catering Services" 
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="absolute inset-0 bg-ocean-deep/85" />
           <div className="absolute inset-0 bg-bengali-pattern" />
