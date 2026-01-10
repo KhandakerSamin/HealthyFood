@@ -477,9 +477,9 @@ const Menu = () => {
             {/* Mobile: Horizontal scroll with gradient indicators */}
             <div className="md:hidden relative">
               {/* Left gradient fade */}
-              <div className="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-cream to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute left-0 top-0 bottom-0 w-4 bg-gradient-to-r from-cream to-transparent z-10 pointer-events-none"></div>
               {/* Right gradient fade */}
-              <div className="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-4 bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none"></div>
               
               <div className="overflow-x-auto scrollbar-hide pb-3 px-1">
                 <div className="flex gap-3 px-2" style={{ scrollSnapType: 'x mandatory' }}>
@@ -488,9 +488,9 @@ const Menu = () => {
                       key={tab.key}
                       onClick={() => setActiveTab(tab.key)}
                       style={{ scrollSnapAlign: 'start' }}
-                      className={`px-5 py-3 font-body text-sm tracking-wide rounded-xl transition-all duration-300 whitespace-nowrap shadow-md flex-shrink-0 ${
+                      className={`px-5 py-3 font-body text-sm tracking-wide rounded-xl transition-all duration-300 whitespace-nowrap  flex-shrink-0 ${
                         activeTab === tab.key
-                          ? 'bg-ocean-deep text-white shadow-lg scale-105'
+                          ? 'bg-ocean-deep text-white  scale-105'
                           : 'bg-white text-ocean-deep hover:bg-ocean-mist border-2 border-ocean-deep/10'
                       }`}
                     >
@@ -512,9 +512,9 @@ const Menu = () => {
                 <button
                   key={tab.key}
                   onClick={() => setActiveTab(tab.key)}
-                  className={`px-6 py-3 font-body text-sm tracking-wide rounded-xl transition-all duration-300 whitespace-nowrap shadow-md ${
+                  className={`px-6 py-3 font-body text-sm tracking-wide rounded-xl transition-all duration-300 whitespace-nowrap  ${
                     activeTab === tab.key
-                      ? 'bg-ocean-deep text-white shadow-xl scale-105'
+                      ? 'bg-ocean-deep text-white  scale-105'
                       : 'bg-white text-ocean-deep hover:bg-ocean-mist border-2 border-ocean-deep/10 hover:border-ocean-deep/30'
                   }`}
                 >
