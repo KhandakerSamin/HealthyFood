@@ -81,6 +81,7 @@ const Catering = () => {
             src={galleryDining} 
             alt="Catering Services" 
             className="w-full h-full object-cover"
+            style={{ imageOrientation: 'from-image' }}
             loading="eager"
             fetchPriority="high"
             decoding="async"

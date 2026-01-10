@@ -85,6 +85,7 @@ const Index = () => {
                   src={chefCooking} 
                   alt="Chef cooking"
                   className="w-full h-full object-cover"
+                  style={{ imageOrientation: 'from-image' }}
                   loading="lazy"
                   decoding="async"
                 />
@@ -153,6 +154,7 @@ const Index = () => {
                     src={dish.image} 
                     alt={dish.name}
                     className="w-full h-full object-cover"
+                    style={{ imageOrientation: 'from-image' }}
                     loading="lazy"
                     decoding="async"
                   />
@@ -245,6 +247,7 @@ const Index = () => {
                   src={aboutImage} 
                   alt="Catering services"
                   className="w-full h-full object-cover"
+                  style={{ imageOrientation: 'from-image' }}
                   loading="lazy"
                   decoding="async"
                 />
@@ -261,6 +264,7 @@ const Index = () => {
             src={galleryDining} 
             alt="Restaurant ambiance"
             className="w-full h-full object-cover"
+            style={{ imageOrientation: 'from-image' }}
             loading="lazy"
             decoding="async"
           />

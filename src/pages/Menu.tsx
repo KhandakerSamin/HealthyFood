@@ -447,7 +447,7 @@ const Menu = () => {
       {/* Hero */}
       <section className="relative pt-32 pb-16 md:pt-40 md:pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={galleryDining} alt="Menu" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" />
+          <img src={galleryDining} alt="Menu" className="w-full h-full object-cover" style={{ imageOrientation: 'from-image' }} loading="eager" fetchPriority="high" decoding="async" />
           <div className="absolute inset-0 bg-ocean-deep/85" />
           <div className="absolute inset-0 bg-bengali-pattern" />
           <div className="absolute inset-0 bg-texture opacity-15" />

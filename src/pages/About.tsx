@@ -23,6 +23,7 @@ const About = () => {
             src={galleryDining} 
             alt="Restaurant ambiance" 
             className="w-full h-full object-cover"
+            style={{ imageOrientation: 'from-image' }}
             loading="eager"
             fetchPriority="high"
             decoding="async"
@@ -54,6 +55,7 @@ const About = () => {
                   src={chefCooking} 
                   alt="Our chef preparing dishes"
                   className="w-full h-full object-cover"
+                  style={{ imageOrientation: 'from-image' }}
                   loading="lazy"
                   decoding="async"
                 />

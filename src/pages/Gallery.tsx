@@ -35,6 +35,7 @@ const Gallery = () => {
             src={galleryDining} 
             alt="Gallery ambiance" 
             className="w-full h-full object-cover"
+            style={{ imageOrientation: 'from-image' }}
             loading="eager"
             fetchPriority="high"
             decoding="async"
@@ -66,6 +67,7 @@ const Gallery = () => {
                   src={img.image} 
                   alt={img.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  style={{ imageOrientation: 'from-image' }}
                   loading="lazy"
                   decoding="async"
                 />
@@ -107,6 +109,7 @@ const Gallery = () => {
                 src={selectedItem.image} 
                 alt={selectedItem.title}
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg"
+                style={{ imageOrientation: 'from-image' }}
                 loading="eager"
                 decoding="async"
               />
