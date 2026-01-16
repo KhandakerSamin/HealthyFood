@@ -35,47 +35,28 @@ const Footer = () => {
               Crafted with Honesty, Inspired by Tradition. Authentic Bangladeshi cuisine made with fresh, 
               clean ingredients in the heart of Eskaton.
             </p>
-            <div className="flex gap-3 mb-6">
+            <div className="flex gap-4 mb-6">
               <a
                 href="#"
-                className="w-11 h-11 rounded-full bg-ocean-dark/80 flex items-center justify-center 
-                         hover:bg-gold hover:text-ocean-deep transition-all duration-300"
+                className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center 
+                         hover:bg-gold hover:text-ocean-deep transition-all duration-300 backdrop-blur-sm
+                         ring-2 ring-white/20 hover:ring-gold"
                 aria-label="Facebook"
               >
-                <Facebook size={18} />
+                <Facebook size={24} className="text-white" />
               </a>
               <a
                 href="#"
-                className="w-11 h-11 rounded-full bg-ocean-dark/80 flex items-center justify-center 
-                         hover:bg-gold hover:text-ocean-deep transition-all duration-300"
+                className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center 
+                         hover:bg-gold hover:text-ocean-deep transition-all duration-300 backdrop-blur-sm
+                         ring-2 ring-white/20 hover:ring-gold"
                 aria-label="Instagram"
               >
-                <Instagram size={18} />
+                <Instagram size={24} className="text-white" />
               </a>
             </div>
             
-            {/* Delivery Partners */}
-            <div>
-              <p className="font-body text-xs text-primary-foreground/50 mb-3 uppercase tracking-wider">Order via</p>
-              <div className="flex gap-3">
-                <a 
-                  href="https://www.foodpanda.com.bd" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-lg bg-[#d70f64] text-white text-xs font-semibold hover:opacity-90 transition-opacity"
-                >
-                  Foodpanda
-                </a>
-                <a 
-                  href="https://pathao.com/food" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 rounded-lg bg-[#0d8d00] text-white text-xs font-semibold hover:opacity-90 transition-opacity"
-                >
-                  Pathao Food
-                </a>
-              </div>
-            </div>
+            
           </div>
 
           {/* Opening Hours */}
@@ -86,12 +67,8 @@ const Footer = () => {
             </h3>
             <ul className="space-y-4 font-body text-sm">
               <li className="flex justify-between text-primary-foreground/70">
-                <span>Saturday - Thursday</span>
-                <span className="text-primary-foreground">12:00 PM - 11:00 PM</span>
-              </li>
-              <li className="flex justify-between text-primary-foreground/70">
-                <span>Friday</span>
-                <span className="text-primary-foreground">2:00 PM - 11:00 PM</span>
+                <span>Every Day</span>
+                <span className="text-primary-foreground">7:00 AM - 12:00 AM</span>
               </li>
             </ul>
           </div>
@@ -104,7 +81,7 @@ const Footer = () => {
             </h3>
             <div className="flex gap-3 text-primary-foreground/70 font-body text-sm">
               <MapPin size={18} className="shrink-0 mt-0.5 text-gold" />
-              <span>Eskaton, Moghbazar<br />Dhaka 1217, Bangladesh</span>
+              <span>400, New Eskaton, Moghbazar<br />Dhaka 1217, Bangladesh</span>
             </div>
           </div>
 
@@ -123,9 +100,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@healthyfooddhaka.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300 group">
+                <a href="mailto:marketingdept.healthyfood@gmail.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300 group">
                   <Mail size={18} className="text-gold" />
-                  <span>info@healthyfooddhaka.com</span>
+                  <span>marketingdept.healthyfood@gmail.com</span>
                   <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
               </li>
