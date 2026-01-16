@@ -12,12 +12,12 @@ import dishKhichuri from '@/assets/g6.jpg';
 import Coffee from '@/assets/g7.jpg';
 
 const galleryImages = [
-  { id: 1, title: 'Restaurant Ambiance', category: 'ambiance', image: heroImage },
-  { id: 2, title: 'Shorisha Ilish', category: 'dishes', image: dishHilsa },
-  { id: 3, title: 'Private Dining', category: 'ambiance', image: dishKhichuri },
-  { id: 4, title: 'Duck Curry', category: 'dishes', image: dishDuck },
-  { id: 5, title: 'Our Chef at Work', category: 'events', image: chefCooking },
-  { id: 6, title: 'Khichuri Platter', category: 'dishes', image:  Coffee},
+  { id: 1, title: '', category: 'ambiance', image: heroImage },
+  { id: 2, title: '', category: 'dishes', image: dishHilsa },
+  { id: 3, title: '', category: 'ambiance', image: dishKhichuri },
+  { id: 4, title: '', category: 'dishes', image: dishDuck },
+  { id: 5, title: '', category: 'events', image: chefCooking },
+  { id: 6, title: '', category: 'dishes', image:  Coffee},
 ];
 
 const Gallery = () => {

@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ArrowRight, Leaf, Music, Wind, BadgeCheck, Truck, UtensilsCrossed } from 'lucide-react';
-import dish1 from '@/assets/dish1.jpg';
-import dish2 from '@/assets/dish4.jpg';
-import dish3 from '@/assets/dish3.jpg';
+import dish1 from '@/assets/fi-1.jpg';
+import dish2 from '@/assets/fi-2.jpg';
+import dish3 from '@/assets/fi-3.jpg';
 import galleryDining from '@/assets/dining.jpg';
 import chefCooking from '@/assets/philosophy.png';
 import aboutImage from '@/assets/HCatering.jpg';
@@ -242,7 +242,7 @@ const Index = () => {
               transition={{ duration: 0.6, delay: 0.15 }}
               className="relative"
             >
-              <div className="image-hover aspect-[4/3] rounded-lg overflow-hidden">
+                <div className="image-hover aspect-[4/3] rounded-lg overflow-hidden relative">
                 <img 
                   src={aboutImage} 
                   alt="Catering services"
@@ -251,7 +251,8 @@ const Index = () => {
                   loading="lazy"
                   decoding="async"
                 />
-              </div>
+                <div className="absolute inset-0 bg-ocean-deep/30" />
+                </div>
             </motion.div>
           </div>
         </div>
