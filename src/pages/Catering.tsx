@@ -153,10 +153,10 @@ const Catering = () => {
 
                   <div className="pt-4 border-t-2 border-gold/30 mb-4">
                     <div className="flex items-center justify-between">
-                      <span className="font-display text-lg text-ocean-deep font-medium">Total:</span>
-                      <span className="font-display text-2xl text-gold font-bold">৳{calculateTotal(menu.items)}</span>
+                      <span className="font-display text-center text-lg text-ocean-deep font-medium">Customers can mix and match items according to their preferences</span>
+                      {/* <span className="font-display text-2xl text-gold font-bold">৳{calculateTotal(menu.items)}</span> */}
                     </div>
-                    <p className="text-xs text-muted-foreground mt-1 text-right">+ MRP drinks</p>
+                    {/* <p className="text-xs text-muted-foreground mt-1 text-right">+ MRP drinks</p> */}
                   </div>
 
                   <a

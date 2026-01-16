@@ -13,8 +13,8 @@ interface MenuItem {
 const menuData = {
   breakfast: {
     title: 'Breakfast',
-    beverages: [
-      { name: 'Green Coconut Water', price: 200, description: 'Fresh, no added sugar' }
+    healthyFoodSpecial: [
+      { name: 'Green Coconut Water', price: 200 ,description:'Start Your Day Refreshed With Freshly Served Coconut Water. No Added Sugar' }
     ],
     carbohydrate: [
       { name: 'Chapati', price: 20 },
