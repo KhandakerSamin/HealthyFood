@@ -336,7 +336,7 @@ const Menu = () => {
                   <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
                 )}
               </div>
-              <span className="font-display text-xl text-gold font-medium whitespace-nowrap">৳{item.price}</span>
+              <span className="font-display text-xl text-gold font-medium whitespace-nowrap">{item.price} /=</span>
             </div>
           </motion.div>
         ))}
@@ -357,7 +357,7 @@ const Menu = () => {
             <h4 className="font-display text-xl text-ocean-deep mb-1">Add Flavour</h4>
             <p className="text-sm text-muted-foreground">Customize your ice cream</p>
           </div>
-          <span className="font-display text-2xl text-gold font-medium">৳70</span>
+          <span className="font-display text-2xl text-gold font-medium">70 /=</span>
         </div>
       </motion.div>
     </div>
@@ -392,7 +392,7 @@ const Menu = () => {
                 <div className="flex items-center gap-4 mb-3">
                   <h3 className="font-display text-3xl md:text-4xl text-ocean-deep italic">{setMenuNames[index]}</h3>
                   <div className="flex-1 h-px bg-gold/30"></div>
-                  <span className="font-display text-2xl text-gold font-bold">৳{total}</span>
+                  <span className="font-display text-2xl text-gold font-bold">{total} /=</span>
                 </div>
                 <p className="text-sm text-muted-foreground pl-1">Complete set menu per person (+ MRP drinks)</p>
               </div>
@@ -415,7 +415,7 @@ const Menu = () => {
                         </h4>
                       </div>
                       <span className="font-display text-lg text-gold font-medium whitespace-nowrap">
-                        {item.price === 0 ? item.description : `৳${item.price}`}
+                        {item.price === 0 ? item.description : `${item.price} /=`}
                       </span>
                     </div>
                   </motion.div>
