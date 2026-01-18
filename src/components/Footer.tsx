@@ -37,7 +37,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4 mb-6">
               <a
-                href="#"
+                href="https://www.facebook.com/share/1WqzbW9Jp2/"
                 className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center 
                          hover:bg-gold hover:text-ocean-deep transition-all duration-300 backdrop-blur-sm
                          ring-2 ring-white/20 hover:ring-gold"
@@ -46,7 +46,7 @@ const Footer = () => {
                 <Facebook size={24} className="text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/healthyfooddhakaebr?igsh=MWU1cjlhcGswemxkMQ=="
                 className="w-14 h-14 rounded-full bg-white/10 flex items-center justify-center 
                          hover:bg-gold hover:text-ocean-deep transition-all duration-300 backdrop-blur-sm
                          ring-2 ring-white/20 hover:ring-gold"
