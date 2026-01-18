@@ -15,9 +15,9 @@ const Index = () => {
   const { t } = useLanguage();
 
   const featuredDishes = [
-    { image: dish1, name: 'Shorisha Ilish', desc: 'Hilsa in mustard sauce', price: '৳650' },
-    { image: dish2, name: 'Mutton Biryani', desc: 'Saffron-infused perfection', price: '৳420' },
-    { image: dish3, name: 'Duck Curry', desc: 'Traditional delicacy', price: '৳750' },
+    { image: dish1, name: 'Shorisha Ilish', desc: 'Hilsa in mustard sauce', price: '650 /=' },
+    { image: dish2, name: 'Mutton Biryani', desc: 'Saffron-infused perfection', price: '420 /=' },
+    { image: dish3, name: 'Duck Curry', desc: 'Traditional delicacy', price: '750 /=' },
   ];
 
   const features = [
