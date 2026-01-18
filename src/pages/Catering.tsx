@@ -145,7 +145,7 @@ const Catering = () => {
                       <div key={i} className="flex items-center justify-between gap-3 py-2 border-b border-border/50 last:border-0">
                         <span className="font-body text-sm text-ocean-deep flex-1">{i + 1}. {item.name}</span>
                         <span className="font-display text-base text-gold font-medium whitespace-nowrap">
-                          {item.priceNote ? item.price : `৳${item.price}`}
+                          {item.priceNote ? item.price : `${item.price} /=`}
                         </span>
                       </div>
                     ))}
