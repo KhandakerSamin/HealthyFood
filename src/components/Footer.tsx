@@ -42,6 +42,7 @@ const Footer = () => {
                          hover:bg-gold hover:text-ocean-deep transition-all duration-300 backdrop-blur-sm
                          ring-2 ring-white/20 hover:ring-gold"
                 aria-label="Facebook"
+                target='_blank'
               >
                 <Facebook size={24} className="text-white" />
               </a>
@@ -51,6 +52,7 @@ const Footer = () => {
                          hover:bg-gold hover:text-ocean-deep transition-all duration-300 backdrop-blur-sm
                          ring-2 ring-white/20 hover:ring-gold"
                 aria-label="Instagram"
+                target='_blank'
               >
                 <Instagram size={24} className="text-white" />
               </a>
@@ -94,14 +96,14 @@ const Footer = () => {
             <ul className="space-y-4 font-body text-sm">
               <li>
                 <a href="tel:+8801309225522" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300 group">
-                  <Phone size={18} className="text-gold" />
+                  <Phone size={20} className="text-gold shrink-0" />
                   <span>01309-225522</span>
                   <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
               </li>
               <li>
                 <a href="mailto:marketingdept.healthyfood@gmail.com" className="flex items-center gap-3 text-primary-foreground/70 hover:text-primary-foreground transition-colors duration-300 group">
-                  <Mail size={18} className="text-gold" />
+                  <Mail size={20} className="text-gold shrink-0" />
                   <span>marketingdept.healthyfood@gmail.com</span>
                   <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </a>
